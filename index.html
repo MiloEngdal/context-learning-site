@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>AI Context & Memory Learning</title>
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.65;background:#0b1020;color:#e9eeff}
+    h1,h2{line-height:1.2} a{color:#7fb2ff} .card{background:#121a33;border:1px solid #2c3f74;border-radius:14px;padding:20px}
+    code{background:#1a274f;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>AI Context & Memory, Step by Step</h1>
+    <p>A pedagogical walkthrough of how modern AI systems manage context windows, memory, compaction, retrieval, and caching.</p>
+    <h2>1) Context vs memory</h2>
+    <p><strong>Context</strong> is what the model sees right now in one request. <strong>Memory</strong> is what the system stores and can retrieve later.</p>
+    <h2>2) Why forgetting happens</h2>
+    <p>Context windows are finite. Long sessions require pruning, summarization, retrieval, or reset.</p>
+    <h2>3) Compaction</h2>
+    <p>Compaction summarizes older conversation and keeps recent turns detailed. This preserves signal while reducing token load.</p>
+    <h2>4) Retrieval</h2>
+    <p>Good retrieval injects small, relevant snippets. Bad retrieval floods context with noisy text.</p>
+    <h2>5) Prompt caching</h2>
+    <p>Stable prompt prefixes can be reused to reduce latency and token cost.</p>
+    <h2>6) Platform view</h2>
+    <ul>
+      <li>ChatGPT: context + optional memory features</li>
+      <li>Claude/Claude Code: file memory + prompt caching</li>
+      <li>Codex: project/user config, agent workflows</li>
+      <li>OpenClaw: JSONL sessions + compaction + memory tools</li>
+    </ul>
+    <p>Full long-form article lives at <a href="https://milomore.com/ai-context-learning/">milomore.com/ai-context-learning/</a>.</p>
+  </div>
+</body>
+</html>
